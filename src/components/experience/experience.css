@@ -1,0 +1,86 @@
+.experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+.experience_container>div{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+}
+
+.experience_container>div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor:default;
+}
+.experience_frontend>h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap:2rem;
+}
+.experience_details{
+    display: flex;
+    gap:1rem;
+    
+}
+.experience_details>div{
+    position: relative;
+}
+.experience_details>.skill>h4{
+    margin: .2rem 0;
+}
+.experience_details-icons{
+    margin-top: 6px;
+    color:var(--color-primary);
+}
+.certificate{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+.certificate>div>h4{
+    margin: 0px;
+    margin-bottom: .4rem;
+    
+}
+.certificate>div>p{
+    margin: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .experience_container{
+        grid-template-columns: 1fr;
+    }
+    .experience_container>div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .experience_content{
+        padding: 1rem ;
+    }
+}
+
+@media screen and (max-width:600px) {
+.experience_container{
+     gap:1rem;
+}
+.experience_container>div{
+    width: 100%;
+    padding: 2rem 0rem;
+}
+.certification>h3{
+    text-align: center;
+}
+.certficate_content{
+    padding:1rem;
+}
+
+}
